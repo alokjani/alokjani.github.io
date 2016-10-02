@@ -7,17 +7,25 @@ Note the [*] indicates a non-OpenStack component which requires external integra
 |         *Service*      |  *Amazon AWS*          | *OpenStack Project*    |
 | ---------------------- | ---------------------- | ---------------------- |
 | Identity Management    | IAM                    | Keystone               |
-| Virtual Machines       | EC2  + AMI             | Nova + Glance          |
+| Virtual Machines       | EC2                    | Nova	           |
+| Containers             | ECS                    | Nova                   |
+| Images                 | AMI + VM import/export | Glance                 |
 | Object Storage         | S3                     | Swift / Ceph*          |
 | Block Storage          | EBS                    | Cinder / Ceph*         |
 | Network Services       | VPC                    | Neutron                |
 | Load Balancer          | ELB                    | LBaaS  / Octavia       |
 | Relational Databases   | RDS                    | Trove                  |
-| NoSQL Databases        | SimpleDB               | -                      |
+| NoSQL Databases        | DynamoDB               | -                      |
 | Resource Templates     | CloudFormation         | Heat                   |
 | Hadoop + Big Data      | EMR                    | Sahara / Ambari*       |
+| Data Warehousing       | Redshift               | -                      |
 | DNS                    | Route 53               | Designate              |
 | Monitoring             | CloudWatch             | Ceilometer             |
-| Workflow Service       | SWF                    | Mistral                |
+| Notification Services  | SNS                    | -                      |
 | Queue Services         | SQS                    | Zaqar                  |
-
+| Workflow Service       | SWF                    | Mistral                |
+| Streaming Data Proc.   | Kinesis                | -                      |
+| Media Transcoding      | Elastic Transcoder     | -                      |
+| Content Delivery Nets  | CloudFront             | -                      |
+| Backup Archival        | Glacier                | -                      |
+| Serverless Application | Lambda                 | -                      |
