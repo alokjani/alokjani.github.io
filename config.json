@@ -2,6 +2,5 @@
     "useSideMenu": true,
     "lineBreaks": "gfm",
     "additionalFooterText": "",
-    "anchorCharacter": "&para;",
-    "title": "Alok's Tech Notes"
+    "anchorCharacter": "&para;"
 }

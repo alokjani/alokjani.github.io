@@ -1,25 +1,22 @@
-# Alok's Tech Notes 
+# Alok's Blog 
 
 [gimmick:theme](readable)
 
-[Home](index.md)
-
-[OpenStack]()
-
-  * [Keystone](openstack/keystone.md)
-  - - - - 
-  * [OpenStack v AWS](openstack/openstack-v-amazon.md)
-
-[SDN/NFV]()
-
-  * [Contrail-Architecture](contrail/contrail-architecture.md)
-
-[Analytics]()
-
-  * [Hypothesis Testing](analytics/data-analytics.md)
-
 [About](about.md)
 
+[Categories](categories.md)
+
+
+<script>
+  // ref. http://stackoverflow.com/questions/2332811/capitalize-words-in-string
+  String.prototype.capitalize = function() {
+     return this.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
+  };
+
+  var url = document.URL;
+  document.title = 'Alok\'s Blog - ' + url.split('/').pop().replace("#!","").replace(".md","").split('-').join(' ').capitalize();
+  //  alert(document.title); // enable for debugging only 
+</script>
 
 <script type="text/javascript">
 
@@ -35,3 +32,4 @@
   })();
 
 </script>
+
